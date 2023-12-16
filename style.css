@@ -26,10 +26,12 @@ body {
 }
 h1, h2, h3, h4{
     letter-spacing: -2%;
+    
 }
 h1{
-    font-size:59.3px;
+    font-size:50px;
     line-height: 120%;
+    text-align: center;
 }
 h2{
     font-size: 36.65px;
@@ -47,6 +49,9 @@ p{
 .small{
     font-size: 12px;
     line-height: 160%;
+}
+.bold{
+    font-weight: 600;
 }
 .vermillion{
     color:var(--vermillion);
@@ -116,14 +121,14 @@ button{
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
-    width: 0%;
+    height: 0%;
+    width: 100%;
     background-color: var(--black);
-    transition: width 0.3s ease;
+    transition: height 0.3s ease;
     z-index:-1;
 }
 .btn-white:hover::before{
-    width: 100%;
+    height: 100%;
 }
 .btn-main {
     font-size: 14px;
@@ -177,13 +182,13 @@ button{
     font-size:80px;
     width: 70%;
     align-self: center;
-    text-align: center;
 }
 .banner{
     width: 70%;
     align-items: center;
     padding:20px 40px;
     gap: 30px;
+    position: relative;
 }
 .banner p{
     width:35%;
@@ -191,4 +196,144 @@ button{
     margin-bottom: 15px;
 }
 
+.background{
+    position:absolute;
+}
+.shape{
+    top:10%;
+    left:0;
+    width:22%;
+}
+.stars{
+    top:30%;
+    right:40px;
+    width:12%;
+}
+.container-cover{
+    width:100%;
+    overflow-x: scroll;
+    margin:50px;
+    scrollbar-width: thin;
+}
+.container-cover::-webkit-scrollbar{
+    width:0;
+}
+
+.covers{
+    width:140%;
+    height:70vh;
+    align-items: center;
+    padding: 10px 50px;
+    gap:20px;
+
+}
+.header .cover{
+    background-repeat:no-repeat ;
+    background-size: contain;
+    position: relative;
+    
+}
+.header .cover-img{
+    border-radius:10px;
+    width:100%;
+}
+
+.cover .logo{
+    gap: 10px;
+    position: absolute;
+    right:15px;
+    top:15px;
+}
+.cover .logo img{
+    width: auto;
+    height: auto;
+}
+.cover h4{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100%;
+    color:var(--pewter-blue);
+    font-size:30px;
+    text-transform: capitalize;
+}
+.platform{
+    gap:10%;
+    width:80%;
+    align-items: center;
+    padding:40px 0;
+    border-top: 1px solid var(--davys-grey);
+    border-bottom: 1px solid var(--davys-grey);
+    margin-bottom: 150px;
+}
+
+/* ----------------- about section --------------------*/
+.about {
+    align-items: center;
+    gap: 70px;
+    padding: 150px 0;
+    position: relative;
+}
+.about .container {
+   
+    gap: 50px;
+    justify-content: space-between;
+    width: 80%;
+}
+.about .background{
+    top: -80px;
+}
+.about h1{
+    width: 50%;
+}
+.illustration{
+
+    align-items: center;
+    width: 60%;
+    gap:20px;
+}
+.illustration img{
+    width: 60%;
+}
+.illustration p{
+    text-align: center;
+    width:90%;
+}
+.quote{
+    position: relative;
+    align-items: center;
+    background-color: var(--champagne);
+    width:80%;
+    padding:30px;
+}
+.simple-quote {
+    color:var(--vermillion);
+}
+.quote .simple-quote{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size:90px;
+    font-weight: 700;
+}
+.quote h2{
+    width: 70%;
+    text-align: center;
+    margin-bottom:50px;
+}
+.avatar{
+    border-radius: 50%;
+}
+.quote .row{
+    gap:10px;
+    align-items: center;
+}
+.shape-2{
+    position: absolute;
+    left: -70px;
+    bottom: 50px;
+}
+.stars-4{
+    position: absolute;
+    right: -50px;
+    top: -55px;
+}
 
