@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --black: #000000;
+    --pewter-blue: #81ADC8;
+    --davys-grey: #4D4D4D;
+    --vermillion: #CD4631;
+    --champagne: #F7EDE8;
+    --alice-blue: #EDF3F7;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline:none;
+}
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+
+/* -------------------- Main ---------------- */
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+h1, h2, h3, h4{
+    letter-spacing: -2%;
+}
+h1{
+    font-size:59.3px;
+    line-height: 120%;
+}
+h2{
+    font-size: 36.65px;
+    line-height: 120%;
+}
+h3, h4{
+    font-size: 22px;
+    line-height:140%;
+}
+p{
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--davys-grey);
+}
+.small{
+    font-size: 12px;
+    line-height: 160%;
+}
+.vermillion{
+    color:var(--vermillion);
+}
+a{
+    position: relative;
+    display:inline-block;
+    text-decoration: none;
+    color:var(--black);
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+.container-left a::after{
+    content:"";
+    position: absolute;
+    background-color: var(--vermillion);
+    height: 3px;
+    width: 0%;
+    left:0;
+    bottom:-10px;
+    transition: width 0.3s ease;
+}
+.container-left a:hover::after{
+    width: 100%;
+}
+.container-left a:hover{
+    color: var(--vermillion);
+}
+
+/* button */
+button{
+    cursor: pointer;
+}
+.btn{
+    font-size:14px;
+    text-transform: uppercase;
+    border:2px solid var(--black);
+    border-radius:10px;
+    padding: 10px 20px;
+    position:relative;
+    overflow: hidden;
+    color:white;   
+    transition: all 0.3s ease;
+}
+
+.btn-black{
+    background-color: var(--black);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-black:hover{
+    box-shadow: none;
+    top: 3px;
+    left: 3px;
+}
+.btn-white{
+    background:none ;
+    color: var(--black);
+    border: 2px solid var(--black);
+    z-index: 1;
+}
+.btn-white:hover{
+    color:white;
+}
+.btn-white::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--black);
+    transition: width 0.3s ease;
+    z-index:-1;
+}
+.btn-white:hover::before{
+    width: 100%;
+}
+.btn-main {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+    padding:20px 40px;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-main:hover{
+    top: 6px;
+    left: 6px;
+}
+
+/* --------- header-section ------------ */
+.row{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+}
+.header {
+    background-color: var(--champagne);
+    align-items: center;
+}
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:20px 10%;
+}
+.nav-bar .container-left{
+    width:40%;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-left ul{
+    list-style-type: none;
+    gap:40px;
+}
+.container-left svg{
+    position:relative;
+    top:3px;
+}
+.nav-bar .container-right{
+    gap: 20px;
+}
+.banner h1{
+    font-size:80px;
+    width: 70%;
+    align-self: center;
+    text-align: center;
+}
+.banner{
+    width: 70%;
+    align-items: center;
+    padding:20px 40px;
+    gap: 30px;
+}
+.banner p{
+    width:35%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
