@@ -411,7 +411,7 @@ button{
 /* ------------ features section -------------- */
 .features{
     position:relative;
-    padding:100px;
+    padding:100px 100px 130px 100px;
     gap:50px;
     align-items: center;
 }
@@ -459,3 +459,121 @@ button{
 .features .card h4{
     text-align: center;
 }
+
+/* ------------- Content-section ------------ */
+.content{
+    position: relative;
+    background-color: var(--champagne);
+    padding:150px 50px;
+    align-items: center;
+}
+.content-background{
+    position: absolute;
+    top: -70px;
+}
+.content p{
+    font-size: 20px;
+    margin: 20px;
+}
+.content .container{
+    width: 100%;
+    position: relative;
+    gap:30px;
+    justify-content: center;
+    margin:70px 0;
+}
+
+.container-background{
+    position:absolute;
+    top: -100px;
+    right: -30px;
+}
+.content .card{
+    align-items: flex-start;
+    position: relative;
+    background-color: white;
+    width: 45%;
+    gap:15px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid var(--Black, #000);
+    
+}
+.content .card:hover{
+    box-shadow: 10px 10px 0px 0px #81ADC8;
+    bottom: 10px;
+    right: 10px;
+}
+.content .card:hover .description h4{
+    color: var(--vermillion);
+}
+.content .card .row{
+    gap:5px;
+}
+.content .card .cover{
+    gap:20px;
+    width: 35%;
+
+}
+.content .card .cover .row{
+    flex-wrap: wrap;
+    width: 190px;
+    
+}
+.content .card .cover img{
+    border-radius: 5px;
+    width: 90%;
+}
+.content .card h4{
+    border-bottom: 1px solid var(--davys-grey);
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.content .card p{
+    font-size: 12px;
+    margin: 10px;;
+    margin-left: 0;
+    width: 90%;
+}
+.tag{
+    position: relative;
+    padding: 5px 10px;
+    color: var(--davys-grey);
+    font-size: 11px;
+    border: 1px solid var(--davys-grey);
+    border-radius: 3px;
+}
+.content .card .description{
+    display: flex;
+    flex-direction: column;
+  
+    height: 100%;
+    padding-top: 20px;
+}
+.host{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    bottom: 10px;
+    right: -10px;
+}
+.host span{
+    font-size: 12px;
+    font-weight: 600;
+    color:var(--davys-grey);
+}
+.host img{
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.host-1 {
+    z-index: 0;
+}
+.host-2 {
+    z-index: 1;
+    position: relative;
+    right:20px;
+}
+
