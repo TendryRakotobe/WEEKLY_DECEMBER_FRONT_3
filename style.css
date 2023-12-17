@@ -21,6 +21,9 @@
 
 
 /* -------------------- Main ---------------- */
+.features, .about, .pricing, .blog, .cta{
+    border-bottom: 0.5px solid #b1aeae;
+}
 body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -686,4 +689,71 @@ button{
 }
 .included ul li{
     margin-bottom: 10px;
+}
+
+/* ---------- blog section --------------*/
+.blog{
+    position: relative;
+    padding: 150px 20px;
+    align-items: center;
+}
+.blog .container{
+    justify-content: center;
+    flex-wrap: wrap;
+    width:90%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.blog .text{
+    gap: 20px;
+    margin-bottom: 80px;
+}
+.blog .text p{
+    font-size: 20px;
+}
+.article{
+    position: relative;
+    width: 45%;
+    border-radius: 8px;
+    border: 2px solid var(--Black, #000);
+    background: #FFF;
+    padding:15px 15px 20px 15px;
+    gap:20px;
+}
+.article:hover{
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 10px 10px 0px 0px #000;
+}
+.article:hover h4{
+    color: var(--vermillion);
+}
+.article p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--davys-grey);
+}
+.article h4{
+    font-size: 30px;
+}
+.article span{
+    color: var(--davys-grey);
+}
+.article .row{
+    gap: 7px;
+}
+.positioned{
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+}
+.blog-vector, .blog-scribble{
+    position: absolute;
+}
+.blog-vector{
+    top: 270px;
+    left: 20px;
+}
+.blog-scribble{
+    bottom:60px;
+    right: -20px;
 }
