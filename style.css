@@ -65,6 +65,9 @@ a{
     font-size: 14px;
     transition: color 0.3s ease;
 }
+.align-center{
+    align-items: center;
+}
 .container-left a::after{
     content:"";
     position: absolute;
@@ -577,3 +580,110 @@ button{
     right:20px;
 }
 
+/* --------------------- pricing-section -------------------- */
+.pricing{
+    align-items: center;
+    position: relative;
+    padding: 150px 20px;
+}
+.scribble-2{
+    position: absolute;
+    top: -80px;
+}
+.pricing .text{
+    padding:20px;
+    position: relative;
+}
+.pricing .text img{
+    position: absolute;
+    top:-50px;
+    left:-50px;
+}
+.pricing .text p{
+    font-size: 20px;
+    padding:20px;
+}
+.pricing .container{
+    position: relative;
+    justify-content: center;
+    width:90%;
+    height: 100vh;
+    gap:20px;
+    margin-top:50px;
+}
+.pricing-background{
+    position: absolute;
+}
+.pricing-background.star{
+    right:-40px;
+    top:-70px;
+    z-index: -1;
+}
+.pricing-background.scribble{
+    bottom: -50px;
+    left: -40px;
+
+}
+.pricing .card{
+    gap: 20px;
+    width: 30%;
+    height: 100%;
+}
+.pricing .card:hover .offer, .pricing .card:hover .included{
+  background-color: var(--champagne);
+  border: 1.5px solid var(--vermillion);
+}
+.pricing .card:hover .offer .tag{
+    background-color: var(--vermillion);
+    color:white;
+    border-color: var(--vermillion);
+}
+.pricing .card .offer{
+    height: 55vh;
+    position: relative;
+}
+.pricing .card .included{
+    height: 45vh;
+}
+.pricing .card .offer, .pricing .card .included{
+    background-color: white;
+    border: 1.5px solid var(--black);
+    border-radius: 8px;
+    gap: 20px;
+    padding:40px 30px;
+    z-index: 1;
+    
+}
+.offer h4{
+    font-size: 30px;
+}
+.offer .row{
+    width:82%;
+    
+    position: absolute;
+    bottom: 40px;
+    justify-content: space-between;
+}
+.offer span{
+    font-size: 14px;
+    font-weight: 600;
+    color:var(--davys-grey);
+}
+.offer .tag{
+    position: relative;
+    left:30px;
+    padding:2px 7px;
+}
+.price{
+    font-size:20px;
+    font-weight: 600;
+}
+.included p{
+    font-weight: 600;
+}
+.included ul{
+    padding-left: 15px;
+}
+.included ul li{
+    margin-bottom: 10px;
+}
