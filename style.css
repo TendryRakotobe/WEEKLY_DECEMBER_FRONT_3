@@ -813,3 +813,107 @@ button{
     right: -70px;
     bottom: 15px;
 }
+
+/* ---------- footer section ------------- */
+.footer{
+    width:100%;
+    padding: 0 10%;
+}
+.footer .container{
+    align-items: flex-start;
+    gap: 25px;
+    border-bottom: 1px solid #00000033;
+}
+.footer .logo span{
+    margin-left:30px;
+    color: var(--davys-grey);
+}
+.footer .about{
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+    width:35%;
+    border: none;
+}
+.footer .about p{
+    width: 70%;
+}
+.footer .social {
+    
+    gap: 10px;
+   
+}
+.footer .social div{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+.footer .social div:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.twitter{
+    background-image: url("img/twitter.png");
+}
+.twitter:hover{
+    background-image: url("img/twitter-vermillon.png");
+}
+.instagram{
+    background-image: url("img/instagram.png");
+}
+.instagram:hover{
+    background-image: url("img/instagram-verimillon.png");
+}
+.tiktok{
+    background-image: url("img/tiktok.png");
+}
+.tiktok:hover{
+    background-image: url("img/tiktok-vermillon.png");
+}
+.footer .links{
+    background-color: #FFF;
+    position: relative;
+    top: 150px;
+    width: 200px;
+    
+}
+.footer .links ul{
+    list-style-type: none;
+}
+.footer .links li{
+    margin-bottom: 20px;
+    
+}
+.footer a{
+    font-weight: 500;
+}
+.footer a:hover{
+    color:var(--vermillion);
+}
+.footer .platforms{
+    background-color: white;
+    position: relative;
+    gap: 20px;
+    top: 150px;
+}
+.footer .platforms .list img{
+    height: 20px;
+}
+.footer .list{
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.store{
+    height: 40px;
+    gap: 20px;
+}
+.footer .rights{
+    justify-content: space-between;
+    margin: 10px 0 70px 0;
+}
+.footer .rights p{
+    font-size: 12px;
+}
